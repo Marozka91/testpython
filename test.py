@@ -1,7 +1,13 @@
 from selenium import webdriver
- 
-driver = webdriver.Firefox()
-driver.get("http://www.google.com")
+
+# Открытие браузера - open_driver
+def open_driver():
+    global driver
+    driver = webdriver.Firefox()
+    driver.get("http://www.google.com")
+
+
+open_driver()
  
 elem = driver.find_element_by_name("q")
 elem.send_keys("Hello WebDriver!")
