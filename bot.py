@@ -1,10 +1,24 @@
+from tkinter import *
 
-import telebot
-from telebot import types
-import requests
-import time
+def forbur():
 
-token = "751215261:AAEh5UXaN9kQp_M2aoaiHVCfeyoUKxlICqE"
-bot = telebot.Telebot(token)
-markup = types.ReplyKeyboardMarkup()
-markup.row('karding', 'camoexenie')
+    login = edit.get()
+
+    if login == "aleksej":
+       
+
+    else:
+        t1.config(text = 'Noy Login')
+
+w2=Tk()
+w2.geometry('200x80')
+
+t1 = Label (w2, text='Enter login')
+t1.pack()
+
+edit = Entry (w2, width = 20)
+edit.pack()
+
+but = Button(w2, text = 'Enter', command = forbur)
+but.pack()
+w2.mainloop()
